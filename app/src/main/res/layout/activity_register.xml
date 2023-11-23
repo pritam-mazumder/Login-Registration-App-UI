@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/back"
+        style="@style/back"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/back"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/header"
+            android:text="Hello! Register to get started" />
+
+        <RelativeLayout
+            style="@style/emptyrelativelayout"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/emptybox">
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/emptybox"
+                android:hint="Username"
+                android:inputType="text"
+                android:paddingStart="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/emptyrelativelayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/emptybox">
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/emptybox"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/emptyrelativelayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/emptybox">
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/emptybox"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/emptyrelativelayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/emptybox">
+
+            <EditText
+                android:id="@+id/confirmpassword"
+                style="@style/emptybox"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rregister"
+            style="@style/blackbox"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/blackbox"
+            android:text="Register" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="22dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Or Register with"
+                android:textColor="@color/darkgray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="22dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/iconbox"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/iconbox">
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebook" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/iconbox"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/iconbox">
+
+                <ImageView
+                    android:id="@+id/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/google" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/iconbox"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/iconbox">
+
+                <ImageView
+                    android:id="@+id/apple"
+                    style="@style/icon"
+                    android:src="@drawable/apple" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/footertextgroup"
+        android:layout_marginTop="800dp">
+
+        <TextView
+            style="@style/footertext"
+            android:text="Already have an account?" />
+
+        <TextView
+            android:id="@+id/registerlogin"
+            style="@style/coloredfootertext"
+            android:text=" Login Now" />
+    </LinearLayout>
+
+</RelativeLayout>

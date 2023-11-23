@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPVerification">
+
+    <ImageView
+        android:id="@+id/back"
+        style="@style/back"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/back"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/header"
+            android:text="OTP Verification" />
+
+        <TextView
+            style="@style/headerdiscription"
+            android:text="Enter the verification code we just sent on your\nemail address." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="22dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otp1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/otpbox"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                android:inputType="text"
+                android:maxLength="1"
+                android:maxLines="1"
+                tools:ignore="LableFor" />
+
+            <EditText
+                android:id="@+id/otp2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                android:layout_weight="1"
+                android:background="@drawable/otpbox"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="1"
+                android:maxLines="1"
+                tools:ignore="LableFor" />
+
+            <EditText
+                android:id="@+id/otp3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/otpbox"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="1"
+                android:maxLines="1"
+                tools:ignore="LableFor" />
+
+            <EditText
+                android:id="@+id/otp4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/otpbox"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="1"
+                android:maxLines="1"
+                tools:ignore="LableFor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/otpverify"
+            style="@style/blackbox"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/blackbox"
+            android:text="Verify" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/footertextgroup"
+        android:layout_marginTop="800dp">
+
+        <TextView
+            style="@style/footertext"
+            android:text="Didn’t received code?" />
+
+        <TextView
+            android:id="@+id/flogin"
+            style="@style/coloredfootertext"
+            android:text=" Resend" />
+    </LinearLayout>
+
+</RelativeLayout>
